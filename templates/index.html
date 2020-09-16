@@ -1,0 +1,13 @@
+{% extends 'layouts.html' %} {% block title %} Home {% endblock %} {% block content %} {% include 'slider.html' %}
+<div class="jumbotron">
+    <h2 class="text-center">This is home page</h2>
+    <p>Name:{{name}}</p>
+    <p>Age:{{age}}</p>
+    <p>Phone:{{phone}}</p>
+    <ul class="list">
+        {% for row in friendlist %}
+        <li class="list-item">{{row}}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{
+    "emmet.excludeLanguages": [
+
+
+
+        "markdown"
+    ],
+    "json.schemas": [
+
+
+    
+    ],
+    "html.format.contentUnformatted": "",
+    "emmet.extensionsPath": "",
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {"*html" : "html"},
+
+    "emmet.preferences": {
+
+    
+    }
+}
