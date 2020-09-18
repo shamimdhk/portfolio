@@ -1,15 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from .models import AboutUs, Slider, Service
+from .models import AboutUs
 
 def home(request):
     aboutdata = AboutUs.objects.all()
-    sliderdata = Slider.objects.all()
-    servicedata = Service.objects.all()
     contex = {
-        'AboutUs':aboutdata,
-        'Slider' :sliderdata,
-        'Service':servicedata
+        'AboutUs':aboutdata
     }
 
     return render(request,'index.html', contex)
